@@ -1,0 +1,35 @@
+Art Gallery Problem
+Henry Daniels-Koch & Bo Bleckel
+Bowdoin College
+April 2017
+
+This program (mouse2.cpp) runs the art gallery problem on an arbitrary polygon
+defined by the user. To run this program first compile it using the Makefile.
+Typing in 'make' in a terminal command window will successfully compile the
+mouse2.cpp file into an executable file called 'mouse2'. This file can be
+executed by typing './mouse2'. This program takes no command line inputs.
+
+Once the program is up and running, clicking anywhere inside the polygon will
+place a security guard at the click point. For the initial polygon, the view of
+the guard is trivial; it is the whole polygon because this is a convex polygon.
+To make it more interesting, type the 's' key. Now you are allowed to draw a
+polygon of your choosing by clicking around the window to create the vertices
+of the polygon. At this point in time, we have a simple check for a polygon, but it has a few bugs. It will not allow a polygon to wrap around such that it looks like a “C”. Thus, we currently don’t have the simple polygon check on. However, one can change that in the case “e” part of mouse2.cpp. Once you are satisfied with your polygon, press the 'e' key. This will end the drawing mode, and allow you to place the guard somewhere inside the polygon. Again, the program only allows user clicks inside the polygon
+when not in drawing mode. So click around and place your guard somewhere nice.
+The visible polygon for that guard will appear in cyan around the polygon. You
+can move the guard around by clicking elsewhere in the polygon. If you wish,
+press the 'b' key to allow the guard to move around the polygon. It bounces off
+the walls of the polygon with a certain randomness that keeps it from ever
+getting stuck in any corners.
+
+All key strokes will essentially re-do what they did in the past:
+    pressing 'b' will toggle movement of the guard
+    pressing 's' will allow the user to draw a new polygon
+    pressing 'e' will turn off drawing mode and allow the user
+        to set the position of the guard
+    pressing any of the arrow keys will move the guard around
+        depending on the arrow pressed
+
+There are no known bugs with this program, however, when the guard hits a vertex
+straight on while it is moving, a few weird things happen for a fraction of a
+second. Besides this small issue, the program runs perfectly.
