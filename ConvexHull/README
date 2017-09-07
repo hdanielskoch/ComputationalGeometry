@@ -1,0 +1,14 @@
+Graham Scan for Convex Hulls
+
+By Bo Bleckel and Henry Daniels Koch
+Computational Geometry
+Bowdoin College
+February, 2017
+
+This code implement the Graham Scan algorithm for finding the convex hull of a set of points. All code written in the viewPoints.c/.h and rtimer.c/.h functions can be attributed to Professor Laura Toma. The code written in geom.c/.h and pointStack.c/.h is attributed to Bo Bleckel and Henry Daniels Koch.
+
+The Graham scan algorithm is implemented using a stack, thus the need for the "pointStack" files.
+
+A decision had to be made when implementing the algorithm, as to whether or not collinear poitns would be included in the convex hull. We decided that they should be, and therefore they are.
+
+To execute this program, compile using the given Makefile (simply type make from the command line) and then execute the viewPoints executable that will be made. The program requires that the user enter the number of points that they would like to make as a second command line argument, after the executable. Additionally, to test out different configurations of points, enter values 0-9 and ‘w’, to try premade test cases. Some test cases were not included because most of them were made in C++ and converting them to C++ was a pain. If you wish to change the pattern of the lines, go to the main function in the viewPoints.c. We note that when there are too many points (>50) for some functions such as the sign curve or other functions with (>200) points such as a line with random deviations, the algorithm breaks down. We hypothesize that Some things we noticed when working with these different test cases was that our way of sorting simply based on angle wasn't sufficient always. We had to add parameters to the sorting, so that our sorting function would sort first by angle, but then by x values if the angles are equal, and finally by y values if the x and angle values are equal.
