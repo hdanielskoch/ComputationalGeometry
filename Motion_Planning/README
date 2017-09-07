@@ -1,0 +1,23 @@
+README - Motion Planning
+Bo Bleckel & Henry Daniels-Koch
+Bowdoin College - CSCI 3250 Computational Geometry
+Spring 2017
+
+This program allows the user to input as many polygons as they want, specify the
+start and end points, and then computes 1. the visibility graph of the scene, and
+2. the shortest path from the start to the end point. This program is implemented
+in C++, and can be compiled by typing "make" (sans quotes) in a terminal window
+after navigating to this folder. The program takes no command line arguments, but
+requires input from the user from the keyboard to control the scene. The following
+are instructions on which buttons do what to control the scene:
+    S -- pressing S will clear the scene, and allow the user to begin drawing new
+        polygons.
+    F -- after pressing S and drawing a polygon, F will allow the user to finish
+        that polygon, and begin drawing the next.
+    B -- pressing B will now set the program to start point mode, which allows
+        the user to click on the point where they would like the start point to be.
+    E -- pressing E, similar to B, allows the user to set the end point.
+    V -- pressing V will compute the visibility graph and the shortest path, and
+        display them in the scene. After pressing V, if the E was pressed before,
+        the user can click around to move the end point of the scene.
+There are no known bugs in this program.
