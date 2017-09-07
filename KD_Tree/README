@@ -1,0 +1,17 @@
+KD Tree
+Bo Bleckel & Henry Daniels Koch
+Bowdoin College Spring 2017
+
+This program makes a kd tree from a set of points.
+The user specifies the number of points on the command line, and
+the points are initialized based on multiple different test cases.
+To run the program, compile using the provided Makefile and then type ./main [nb points]
+where nb points is the number of points you want.
+To change test cases run the program and press the i key.
+To run any specific test case again, press any of the number keys; each number key
+corresponds to a specific 
+
+There are no known bugs with this program, however, there were only two test
+cases not including ours that were posted on piazza at the time that we submitted.
+A note for the diagonal
+We believe that our code runs correctly.
