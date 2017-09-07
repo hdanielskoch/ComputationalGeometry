@@ -1,0 +1,15 @@
+Orthogonal Line Intersections
+Bo Bleckel & Henry Daniels Koch
+Computational Geometry
+Spring 2017, Bowdoin College
+
+This program will generate n line segments and compute their intersection point.
+Additionally, it will animate the process of calculating them, which uses a technique
+called the "line sweeping" technique. The program compiles and has no know bugs, besides
+the fact that sometimes, in the test case called "initialize_segments_zero()" which has no
+intersection points, it finds intersection points beyond the initialized line segments.
+We are currently working on solving this bug.
+
+To run the program, execute the executable "intersect" and give with it a command line
+argument number. This number refers to the number of line segments to make. Then press
+the i key to switch between test cases.
